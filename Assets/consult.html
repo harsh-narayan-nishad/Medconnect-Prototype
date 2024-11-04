@@ -3,12 +3,13 @@
   <meta charset="utf-8"/>
   <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
   <title>
-   JobHunt
+   Medconnect
   </title>
   <script src="https://cdn.tailwindcss.com">
   </script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/live.css">
   <style>
    body {
             font-family: 'Roboto', sans-serif;
@@ -44,26 +45,25 @@
         .slider-nav.right {
             right: -20px;
         }
+
+
   </style>
  </head>
  <body class="bg-[#f4f4f4] text-gray-800 ">
-  <header class="bg-[#212121] flex justify-between items-center ">
+  <header class="flex justify-between items-center ">
    <div class="text-2xl font-bold">
-    <span class="text-white">
-     Med
-    </span>
-    <span class="text-white">
-     Connect
+    <span class="text-gray-600">
+     MedConnect
     </span>
    </div>
    <nav class="flex items-center space-x-6">
-    <a class="text-[#f4f4f4] text-xs" href="index.html">
+    <a class="text-gray-600 text-xs" href="index.html">
      Home
     </a>
-    <a class="text-[#f4f4f4] text-xs " href="ambulance.html">
+    <a class="text-gray-600 text-xs " href="ambulance.html">
      Ambulance
     </a>
-    <a class="text-[#f4f4f4] text-xs" href="#">
+    <a class="text-gray-600 text-xs" href="#">
      Manual
     </a>
     <div class="relative">
@@ -92,6 +92,7 @@
     </div>
    </nav>
   </header>
+  <div class="horizontal-line "></div> 
   <main class="text-center mt-16 relative z-10 text-center text-white py-24">
    <!-- <div class="inline-block bg-red-100 text-red-600 px-4 py-1 rounded-full text-sm mb-4">
     No. 1 Doctors consulting Website
@@ -100,14 +101,65 @@
     Search 
    </h1>
    
-   <div class="relative max-w-lg mx-auto mb-8">
+   <!-- <div class="relative max-w-lg mx-auto mb-8">
     <input class="w-full border border-gray-300 rounded-full py-3 px-6 text-gray-600 focus:outline-none focus:ring-2 focus:ring-purple-600" placeholder="Find your Best Doctor" type="text"/>
     <button class="absolute right-0 top-0 mt-3 mr-4 text-purple-600">
-     <i class="fas fa-search">
+     
+        <i class="fas fa-search">
      </i>
+
     </button>
-   </div>
-   <div class="slider-container">
+    <p class="text-gray-600">Voice</p> -->
+    <!-- <div class="flex items-center justify-center ">
+        <div class="relative max-w-lg mx-auto mb-8">
+            <div class="flex items-center">
+                <input class="w-full border border-gray-300 rounded-full py-3 px-6 text-gray-600 focus:outline-none focus:ring-2 focus:ring-purple-600" placeholder="Find your Best Doctor" type="text"/>
+                <button class="ml-2 text-purple-600 flex items-center">
+                    <i class="fas fa-search"></i>
+                </button>
+                <p class="ml-4 text-gray-600">Voice</p> 
+            </div>
+        </div>
+    </div> -->
+    <div class="flex items-center justify-center">
+        <div class="relative max-w-lg mx-auto ">
+            <div class="flex items-center">
+                <input class="flex-grow border border-gray-300 rounded-full py-3 px-6 text-gray-600 hover:shadow-lg focus:outline-none focus:ring-1 focus:ring-gray-400 mr-0 " style="width: 35vw;" placeholder="Search symptoms to Find your Best Doctor" type="text"/>
+                <button class="ml-2 text-purple-600 flex items-center">
+                    <i class="fas fa-search"></i>
+                </button>
+                <div class=" text-white transform-translate-y-1/2 px-4  rounded-full flex items-center justify-center">
+        
+                    <section class="section video" aria-label="video">
+                        <div class="container">
+                
+                          <div class="video-card has-before has-bg-image">
+        
+                
+                            <a href="#">
+                                <button class="voice-btn" aria-label="play video">
+                                    <img alt="Profile image 1" class="w-8 h-8 rounded-full" src="img/Mick.jpg" />
+
+                                </button>
+                                
+                            </a>
+        
+        
+                          </div>
+                
+                        </div>
+                      </section>
+        
+            </div> 
+            </div>
+        </div>
+    </div>
+   </div> 
+
+
+
+
+   <div class="slider-container" style="width: auto;">
     <button class="slider-nav left" onclick="slideLeft()">
      <i class="fas fa-chevron-left">
      </i>
@@ -147,6 +199,22 @@
     </button>
    </div>
    <!-- <p>Symptopm basis recommendation</p> -->
+    <footer class="bg-[#0000008f]">
+        <div class="bg-[#d9d9d9] fixed bottom-0 w-full  border-t border-gray-400 py-4">
+            <div class="flex flex-col md:flex-row justify-between text-xs text-gray-600 px-4">
+                <span>India</span>
+                <div class="flex flex-wrap justify-center space-x-4 mt-2 md:mt-0">
+                    <span><a href="#" class="hover:underline">Home</a> </span>
+                    <span><a href="ambulance.html" class="hover:underline">Ambulance</a></span>
+                    <span><a href="consult.html" class="hover:underline">Consult</a></span>
+                    <span>Research</span>
+                    
+                </div>
+                <!-- <span class="mt-2 md:mt-0">Copyright © 2024 Medconnect. All rights reserved.</span> -->
+            </div>
+            <span class="mt-2 md:mt-0 flex flex-col md:flex-row justify-between text-xs text-gray-600 px-4">Copyright © 2024 Medconnect. All rights reserved.</span>
+        </div>
+    </footer>
   </main>
   <script>
    document.getElementById('userMenuButton').addEventListener('click', function() {
