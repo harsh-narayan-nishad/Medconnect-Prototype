@@ -1,0 +1,40 @@
+
+
+:root {
+    --coquelicot: #03c316;
+    /* --coquelicot: #046edc; */
+  }
+  
+  
+  
+  
+  
+
+  
+  
+
+  .video {
+    padding-block: 0;
+    
+  }
+
+  
+  .play-btn {
+    background-color: var(--coquelicot);
+    color: var(--white);
+    width: max-content;
+    font-size: 30px;
+    padding: 3px;
+    border-radius: 50%;
+    margin-block: 25px 35px;
+    animation: pulse 2s ease infinite;
+  }
+  
+  @keyframes pulse {
+    0% { box-shadow: 0 0 0 0 var(--coquelicot); }
+    100% { box-shadow: 0 0 0 10px transparent; }
+  }
+  
+  
+  
+  
