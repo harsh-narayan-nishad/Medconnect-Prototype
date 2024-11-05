@@ -14,6 +14,9 @@
    body {
             font-family: 'Roboto', sans-serif;
         }
+        .bg-medical {
+            background-image: url('img/Medical-background.jpg');
+        }
         .slider-container {
             overflow: hidden;
             position: relative;
@@ -45,25 +48,34 @@
         .slider-nav.right {
             right: -20px;
         }
+        .horizontal-line {
+
+            width: 97vw;
+            height: 0.5px;
+            border: 0.5px solid #ffffff; /* You can change the color as needed */
+            margin: 0 auto ; /* Center the line horizontally */
+            z-index: 10;
+        }
 
 
   </style>
  </head>
- <body class="bg-[#f4f4f4] text-gray-800 ">
+ <body class="bg-[#f4f4f4] bg-medical bg-cover bg-no-repeat bg-center h-screen w-screen">
+    <div class="absolute inset-0 bg-black opacity-70"></div>
   <header class="flex justify-between items-center ">
    <div class="text-2xl font-bold">
-    <span class="text-gray-600">
+    <span class="z-10 text-gray-100">
      MedConnect
     </span>
    </div>
-   <nav class="flex items-center space-x-6">
-    <a class="text-gray-600 text-xs" href="index.html">
+ <nav class="flex z-10 items-center space-x-6">
+    <a class="text-gray-100 text-xs" href="index.html">
      Home
     </a>
-    <a class="text-gray-600 text-xs " href="ambulance.html">
+    <a class="text-gray-100 text-xs " href="ambulance.html">
      Ambulance
     </a>
-    <a class="text-gray-600 text-xs" href="#">
+    <a class="text-gray-100 text-xs" href="#">
      Manual
     </a>
     <div class="relative">
@@ -91,22 +103,23 @@
       </div>
      </div>
     </div>
-   </nav>
-  </header>
+   </nav> 
+  
+</header>
   <div class="horizontal-line "></div> 
-  <main class="text-center mt-16 relative z-10 text-center text-white py-24">
+  <main class="text-center mt-16 relative z-10 text-center text-white py-24"  >
    <!-- <div class="inline-block bg-red-100 text-red-600 px-4 py-1 rounded-full text-sm mb-4">
     No. 1 Doctors consulting Website
    </div> -->
-   <h1 class="text-6xl font-bold text-gray-800  mb-4">
+   <h1 class="text-6xl font-bold text-gray-250  mb-4">
     Medconnect 
    </h1>
 
     <div class="flex items-center justify-center">
         <div class="relative max-w-lg mx-auto ">
             <div class="flex items-center">
-                <input class="flex-grow border border-gray-300 rounded-full py-3 px-6 text-gray-600 hover:shadow-lg focus:outline-none focus:ring-1 focus:ring-gray-400 mr-0 " style="width: 35vw;" placeholder="Search symptoms to Find your Best Doctor" type="text"/>
-                <button class="ml-2 text-purple-600 flex items-center">
+                <input class="flex-grow border border-gray-300 rounded-full py-3 px-6 text-gray-600 hover:shadow-lg focus:outline-none focus:ring-1 focus:ring-gray-400 mr-0 " style="width: 40vw;" placeholder="Search symptoms to Find your Best Doctor" type="text"/>
+                <button class="ml-2 text-[var(--text-color)] flex items-center">
                     <i class="fas fa-search"></i>
                 </button>
                 <div class=" text-white transform-translate-y-1/2 px-4  rounded-full flex items-center justify-center">
@@ -141,7 +154,7 @@
 
 
    <div class="slider-container" style="width: auto;">
-    <button class="slider-nav left bg-gray-600" onclick="slideLeft()">
+    <button class="slider-nav left bg-[var(--text-color)]" onclick="slideLeft()">
      <i class="fas fa-chevron-left">
      </i>
     </button>
@@ -175,29 +188,30 @@
         </button>
     </div>
     
-    <button class="slider-nav right bg-gray-600" onclick="slideRight()">
+    <button class="slider-nav right  bg-[var(--text-color)]" onclick="slideRight()">
      <i class="fas fa-chevron-right">
      </i>
     </button>
    </div>
    <!-- <p>Symptopm basis recommendation</p> -->
-    <footer class="bg-[#0000008f]">
-        <div class="bg-[#d9d9d9] fixed bottom-0 w-full  border-t border-gray-400 py-4">
-            <div class="flex flex-col md:flex-row justify-between text-xs text-gray-600 px-4">
-                <span>India</span>
-                <div class="flex flex-wrap justify-center space-x-4 mt-2 md:mt-0">
-                    <span><a href="#" class="hover:underline">Home</a> </span>
-                    <span><a href="ambulance.html" class="hover:underline">Ambulance</a></span>
-                    <span><a href="consult.html" class="hover:underline">Consult</a></span>
-                    <span><a href="Medconnect-Research/index.html" class="hover:underline">Research</a></span>
-                    
-                </div>
-                <!-- <span class="mt-2 md:mt-0">Copyright © 2024 Medconnect. All rights reserved.</span> -->
-            </div>
-            <span class="mt-2 md:mt-0 flex flex-col md:flex-row justify-between text-xs text-gray-600 px-4">Copyright © 2024 Medconnect. All rights reserved.</span>
-        </div>
-    </footer>
+
   </main>
+  <footer class="bg-[#0000008f]">
+    <div class="bg-[#d9d9d9] fixed bottom-0 w-full  border-t border-gray-400 py-4">
+        <div class="flex flex-col md:flex-row justify-between text-xs text-gray-600 px-4">
+            <span>India</span>
+            <div class="flex flex-wrap justify-center space-x-4 mt-2 md:mt-0">
+                <span><a href="#" class="hover:underline">Home</a> </span>
+                <span><a href="ambulance.html" class="hover:underline">Ambulance</a></span>
+                <span><a href="consult.html" class="hover:underline">Consult</a></span>
+                <span><a href="Medconnect-Research/index.html" class="hover:underline">Research</a></span>
+                
+            </div>
+            <!-- <span class="mt-2 md:mt-0">Copyright © 2024 Medconnect. All rights reserved.</span> -->
+        </div>
+        <span class="mt-2 md:mt-0 flex flex-col md:flex-row justify-between text-xs text-gray-600 px-4">Copyright © 2024 Medconnect. All rights reserved.</span>
+    </div>
+</footer>
   <script>
    document.getElementById('userMenuButton').addEventListener('click', function() {
             var menu = document.getElementById('userMenu');
