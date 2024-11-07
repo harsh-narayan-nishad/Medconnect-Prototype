@@ -19,6 +19,18 @@
     padding-block: 0;
     
   }
+  .live-btn {
+    background-color: var(--coquelicot);
+    color: var(--white);
+    padding: 3px;
+    border-radius: 50%;
+    
+    animation: pulse_live 1s ease infinite;
+  }
+  @keyframes pulse_live {
+    0% { box-shadow: 0 0 0 0 var(--coquelicot); }
+    100% { box-shadow: 0 0 0 7px transparent; }
+  }
 
   
   .play-btn {
@@ -33,7 +45,7 @@
   }
   @keyframes pulse {
     0% { box-shadow: 0 0 0 0 var(--coquelicot); }
-    100% { box-shadow: 0 0 0 10px transparent; }
+    100% { box-shadow: 0 0 0 12px transparent; }
   }
   
   .voice-btn {
@@ -46,6 +58,7 @@
     margin-block: 25px 35px;
     animation: pulse-btn 1.2s ease infinite;
   }
+
   
   @keyframes pulse-btn {
     0% { box-shadow: 0 0 0 0 var(--voice); }
