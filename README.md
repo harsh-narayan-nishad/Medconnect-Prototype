@@ -63,4 +63,4 @@ The project is developed following the SDLC methodology:
 ### Installation  
 1. Clone the repository:  
    ```bash  
-   git clone https://github.com/your-username/MediConnect.git  
+   git clone https://github.com/harsh-narayan-nishad/Mediconnect.git  
